@@ -1,68 +1,65 @@
-
 * {
-	margin: auto 0;
+	margin: 0;
 	box-sizing: border-box;
 }
-
 body {
 	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.header-title {
-	padding-top: 30px;
-	padding-bottom: 30px;
+h1 {
 	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 60px;
 	font-size: 1.75em;
 }
 
-.container {
-	margin:0;
-}
-
-.row {
-	margin:1%;
-	padding:-1%;
-}
-
-.col {
+/*Default*/
+.col-lg-4, .col-md-6, .col-md-12 {
 	position: relative;
-	padding: 32px 15px 0 15px;	
-	margin: 0 1% 2% 1%;
-	background-color: #d3d3d3;
-	border: 1px solid black;
+	float: left;
+	margin-bottom: 20px;	
 }
 
 .section-title {
-	display: inline-block;
 	position: absolute;
 	top: 0;
 	right: 0;
-	border: 1px solid black;
-	padding-left: 30px;
-	padding-right: 30px;
-	box-shadow: 1px 1px 1px black;	
-	text-align: center;
+	margin-right: 12px; /* align with section-content */
+	border: 1px solid #000;
+	padding: 0 20px;
 	font-size: 1.25em;
 }
 
-section:nth-child(1) > .section-title {
+.section-content {
+	width: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 12px;
+	margin-left: 12px;
+	border: 1px solid #000;
+	padding: 35px 10px 10px 10px;
+	background-color: #eee;
+}
+
+#chicken > h3 {
 	background-color: #d7df01;
 }
 
-section:nth-child(2) > .section-title {
+#beef > h3 {
 	background-color: #c20000;
-	color: white;
+	color: #eee;
 }
 
-section:nth-child(3) > .section-title {
+#sushi > h3 {
 	background-color: #ff9d2a;
 }
 
+
 /*Desktop version*/
 @media (min-width: 992px) {	
+
 	.col-lg-4 {
-		width: 31.33%;
-		float: left;
+		width: 33.33%;
 	}
 }
 
@@ -70,13 +67,11 @@ section:nth-child(3) > .section-title {
 @media (min-width: 768px) and (max-width: 991px) {
 
 	.col-md-6 {
-		width: 48%;
-		float: left;
+		width: 50%;
 	}
 
 	.col-md-12 {
-		width: 98%;
-		float: left;
+		width: 100%;
 	}
 }
 
@@ -84,3 +79,4 @@ section:nth-child(3) > .section-title {
 @media (max-width: 767px) {
 
 }
+
