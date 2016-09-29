@@ -1,10 +1,9 @@
+* {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
 
 body {
 	background-color: #ddd;
-}
-
-div.container {
-	
 }
 
 .navbar {
@@ -31,6 +30,11 @@ div.container {
 	text-shadow: 3px 3px 2px #333;
 }
 
+a:active, a:hover {
+	text-shadow: 1px 1px 1px #333;	
+	cursor: pointer;
+}
+
 .navbar-header div {
 	margin-top: 32px;
 }
@@ -50,4 +54,3 @@ div.container {
 	height: 1000px;
 	background-color: #fff;
 }
-
