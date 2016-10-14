@@ -16,7 +16,6 @@
 		function checkLunch(event) {
 			
 			if (!(event instanceof KeyboardEvent) || event.key === "Enter") {
-				console.log('here');
 				if ($scope.dishes === "") {
 					$scope.message = "Please enter data first!";
 					$scope.textColor = "red";
