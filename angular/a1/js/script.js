@@ -30,12 +30,12 @@
 					$scope.textboxBorderColor = "red";
 
 				} else if (count > 3) {
-					$scope.message = "You've eaten too much!";
+					$scope.message = "Too much!";
 					$scope.textColor = "green";
 					$scope.textboxBorderColor = "green";
 
 				} else {
-					$scope.message = "Enjoy you meal!";
+					$scope.message = "Enjoy!";
 					$scope.textColor = "green";
 					$scope.textboxBorderColor = "green";					
 				}				
