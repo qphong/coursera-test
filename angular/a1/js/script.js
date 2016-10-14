@@ -13,15 +13,9 @@
 		$scope.textColor = "black";
 		$scope.textboxBorderColor = "#ccc";
 
-		function checkLunch(event) {
-			
+		function checkLunch(event) {			
+
 			if (!(event instanceof KeyboardEvent) || event.key === "Enter") {
-				if ($scope.dishes === "") {
-					$scope.message = "Please enter data first!";
-					$scope.textColor = "red";
-					$scope.textboxBorderColor = "red";
-					return;
-				}
 
 				dishes = $scope.dishes.split(',');
 
@@ -30,13 +24,21 @@
 					if (dishes[d].replace(/\s/g, '').length)
 						count++;
 
-				if (count > 3)
-					$scope.message = "Too much!";
-				else
-					$scope.message = "Enjoy!";
+				if (count == 0) {
+					$scope.message = "Please enter your data!";
+					$scope.textColor = "red";
+					$scope.textboxBorderColor = "red";
 
-				$scope.textColor = "green";
-				$scope.textboxBorderColor = "green";
+				} else if (count > 3) {
+					$scope.message = "You've eaten too much!";
+					$scope.textColor = "green";
+					$scope.textboxBorderColor = "green";
+
+				} else {
+					$scope.message = "Enjoy you meal!";
+					$scope.textColor = "green";
+					$scope.textboxBorderColor = "green";					
+				}				
 			}
 		}
 	}
