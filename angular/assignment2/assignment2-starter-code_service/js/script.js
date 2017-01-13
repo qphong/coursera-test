@@ -12,7 +12,11 @@
 		var buyingCntrl = this;
 
 		var buyingList = [
-			{name: "Cookies", quantity: 10}
+			{name: "Cookies", quantity: 10},
+			{name: "Snacks", quantity: 10},
+			{name: "Bottles of Coke", quantity: 10},
+			{name: "Cans of Beer", quantity: 10},
+			{name: "Boxs of Candy", quantity: 10}
 		];
 
 		for (var i=0; i < buyingList.length; i++) {
